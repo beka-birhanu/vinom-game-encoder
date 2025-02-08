@@ -1,8 +1,9 @@
-package main
+package gamepb_test
 
 import (
 	"testing"
 
+	gamepb "github.com/beka-birhanu/vinom-game-encoder"
 	"github.com/google/uuid"
 )
 
@@ -12,7 +13,7 @@ func TestGamePb(t *testing.T) {
 
 func testMarshalUnmarshalAction(t *testing.T) {
 	id := uuid.New()
-	encoder := &Protobuf{}
+	encoder := &gamepb.Protobuf{}
 	action := encoder.NewAction()
 	action.SetDirection("North")
 	action.SetID(id)

@@ -4,7 +4,7 @@
 // 	protoc        v5.28.3
 // source: game.proto
 
-package main
+package gamepb
 
 import (
 	reflect "reflect"
